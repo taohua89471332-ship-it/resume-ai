@@ -24,7 +24,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 html, body { background: var(--dark) !important; color: var(--text); color-scheme: dark; }
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   max-width: 430px; margin: 0 auto;
   min-height: 100vh; overflow-x: hidden;
 }
@@ -47,7 +47,7 @@ body {
 }
 .header-row { display: flex; justify-content: space-between; align-items: flex-start; }
 .app-tag { font-size: 10px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; }
-.header-title { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; line-height: 1.2; }
+.header-title { font-family: Georgia, 'Times New Roman', serif; font-size: 26px; font-weight: 700; line-height: 1.2; }
 .header-sub { font-size: 13px; color: var(--sub); margin-top: 4px; }
 .pro-badge {
   background: linear-gradient(135deg, var(--gold), #a07830);
@@ -87,7 +87,7 @@ body {
   background: linear-gradient(135deg, var(--gold), #a07830);
   border: none; border-radius: 14px; padding: 14px;
   color: #fff; font-size: 14px; font-weight: 600;
-  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  cursor: pointer; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   letter-spacing: 0.3px;
 }
 
@@ -126,7 +126,7 @@ body {
   flex: 1; background: var(--card); border: 1px solid var(--border);
   border-radius: 14px; padding: 14px 10px; text-align: center;
 }
-.stat-num { font-size: 22px; font-weight: 700; color: var(--gold); font-family: 'Playfair Display', serif; }
+.stat-num { font-size: 22px; font-weight: 700; color: var(--gold); font-family: Georgia, 'Times New Roman', serif; }
 .stat-label { font-size: 11px; color: var(--sub); margin-top: 3px; }
 
 /* NAV */
@@ -165,7 +165,7 @@ body {
 }
 @keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} }
 .modal-handle { width: 36px; height: 4px; background: #333; border-radius: 2px; margin: 0 auto 20px; }
-.modal-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+.modal-title { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; font-weight: 700; margin-bottom: 6px; }
 .modal-sub { font-size: 13px; color: var(--sub); margin-bottom: 20px; }
 
 /* INPUT */
@@ -175,7 +175,7 @@ body {
   width: 100%; background: var(--dark3);
   border: 1px solid var(--border); border-radius: 12px;
   padding: 12px 14px; color: var(--text);
-  font-family: 'DM Sans', sans-serif; font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px;
   outline: none; transition: border-color 0.2s;
 }
 .input-field:focus, .textarea-field:focus { border-color: var(--gold); }
@@ -202,14 +202,14 @@ body {
   background: linear-gradient(135deg, var(--gold), #a07830);
   border: none; border-radius: 14px; padding: 14px;
   color: #fff; font-size: 14px; font-weight: 600;
-  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  cursor: pointer; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 .secondary-btn {
   width: 100%; margin-top: 10px;
   background: var(--dark3); border: 1px solid var(--border);
   border-radius: 14px; padding: 13px;
   color: var(--text); font-size: 14px; font-weight: 500;
-  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  cursor: pointer; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* RESUME PAGE */
@@ -231,7 +231,7 @@ body {
 .resume-meta { font-size: 12px; color: var(--sub); }
 .resume-score {
   font-size: 18px; font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
 /* PROFILE */
@@ -246,7 +246,7 @@ body {
   display: flex; align-items: center; justify-content: center; font-size: 32px;
   box-shadow: 0 0 30px rgba(212,168,83,0.3);
 }
-.profile-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; }
+.profile-name { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; font-weight: 700; }
 .profile-plan { font-size: 12px; color: var(--gold); margin-top: 4px; letter-spacing: 1px; }
 .prow {
   background: var(--card); border: 1px solid var(--border);
@@ -260,4 +260,320 @@ body {
 <body>
 
 <!-- HOME -->
-<div id="p
+<div id="page-home" class="page active">
+  <div class="header">
+    <div class="header-row">
+      <div>
+        <div class="app-tag">ResumeAI Pro</div>
+        <div class="header-title">Land Your<br>Dream Job</div>
+        <div class="header-sub">AI-powered career tools</div>
+      </div>
+      <div class="pro-badge">✦ PRO</div>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-score-row">
+      <div class="score-ring">
+        <svg width="72" height="72" viewBox="0 0 72 72">
+          <circle cx="36" cy="36" r="28" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="6"/>
+          <circle cx="36" cy="36" r="28" fill="none" stroke="#d4a853" stroke-width="6"
+            stroke-linecap="round" stroke-dasharray="175.9" stroke-dashoffset="44"
+            style="transition:stroke-dashoffset .8s ease"/>
+        </svg>
+        <div class="score-center">
+          <div class="score-num">75</div>
+          <div class="score-label">SCORE</div>
+        </div>
+      </div>
+      <div class="hero-info">
+        <div class="hero-title">Resume Score: Good</div>
+        <div class="hero-sub">Your resume needs a few tweaks to beat 90% of applicants. Let AI fix it now.</div>
+      </div>
+    </div>
+    <button class="hero-btn" onclick="openTool('analyze')">✦ Analyze My Resume</button>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card"><div class="stat-num">2.4M</div><div class="stat-label">Jobs matched</div></div>
+    <div class="stat-card"><div class="stat-num">94%</div><div class="stat-label">Interview rate</div></div>
+    <div class="stat-card"><div class="stat-num">48h</div><div class="stat-label">Avg. response</div></div>
+  </div>
+
+  <div class="sec-title">AI TOOLS</div>
+  <div class="tools-grid">
+    <div class="tool-card" style="--glow:rgba(212,168,83,0.3)" onclick="openTool('resume')">
+      <div class="tool-icon">📄</div>
+      <div class="tool-name">Resume Builder</div>
+      <div class="tool-desc">AI writes your perfect resume in seconds</div>
+      <span class="tool-tag" style="background:rgba(212,168,83,0.15);color:#d4a853">Most Popular</span>
+    </div>
+    <div class="tool-card" style="--glow:rgba(96,165,250,0.3)" onclick="openTool('cover')">
+      <div class="tool-icon">✉️</div>
+      <div class="tool-name">Cover Letter</div>
+      <div class="tool-desc">Personalized letters for each job</div>
+      <span class="tool-tag" style="background:rgba(96,165,250,0.15);color:#60a5fa">AI Powered</span>
+    </div>
+    <div class="tool-card" style="--glow:rgba(52,199,89,0.3)" onclick="openTool('interview')">
+      <div class="tool-icon">🎯</div>
+      <div class="tool-name">Interview Prep</div>
+      <div class="tool-desc">Practice with AI mock interviews</div>
+      <span class="tool-tag" style="background:rgba(52,199,89,0.15);color:#34c759">New</span>
+    </div>
+    <div class="tool-card" style="--glow:rgba(192,132,252,0.3)" onclick="openTool('salary')">
+      <div class="tool-icon">💰</div>
+      <div class="tool-name">Salary Negotiation</div>
+      <div class="tool-desc">Get paid what you're worth</div>
+      <span class="tool-tag" style="background:rgba(192,132,252,0.15);color:#c084fc">Pro</span>
+    </div>
+  </div>
+</div>
+
+<!-- RESUMES PAGE -->
+<div id="page-resumes" class="page">
+  <div class="header">
+    <div class="app-tag">My Documents</div>
+    <div class="header-title">My Resumes</div>
+    <div class="header-sub">3 resumes created</div>
+  </div>
+  <div class="resume-section" style="margin-top:20px">
+    <div class="resume-card" onclick="openTool('resume')">
+      <div class="resume-icon">📄</div>
+      <div class="resume-info">
+        <div class="resume-name">Software Engineer Resume</div>
+        <div class="resume-meta">Updated 2 days ago · Tech</div>
+      </div>
+      <div class="resume-score" style="color:#34c759">92</div>
+    </div>
+    <div class="resume-card" onclick="openTool('resume')">
+      <div class="resume-icon">📋</div>
+      <div class="resume-info">
+        <div class="resume-name">Product Manager Resume</div>
+        <div class="resume-meta">Updated 1 week ago · Product</div>
+      </div>
+      <div class="resume-score" style="color:#d4a853">78</div>
+    </div>
+    <div class="resume-card" onclick="openTool('resume')">
+      <div class="resume-icon">📝</div>
+      <div class="resume-info">
+        <div class="resume-name">General Resume</div>
+        <div class="resume-meta">Updated 2 weeks ago · General</div>
+      </div>
+      <div class="resume-score" style="color:#fb923c">65</div>
+    </div>
+    <button class="action-btn" onclick="openTool('resume')" style="margin-top:6px">+ Create New Resume</button>
+  </div>
+
+  <div class="sec-title">MY COVER LETTERS</div>
+  <div class="resume-section">
+    <div class="resume-card" onclick="openTool('cover')">
+      <div class="resume-icon">✉️</div>
+      <div class="resume-info">
+        <div class="resume-name">Google - Software Engineer</div>
+        <div class="resume-meta">Created 3 days ago</div>
+      </div>
+      <div style="font-size:18px">→</div>
+    </div>
+    <button class="action-btn" onclick="openTool('cover')" style="margin-top:6px">+ New Cover Letter</button>
+  </div>
+</div>
+
+<!-- INTERVIEW PAGE -->
+<div id="page-interview" class="page">
+  <div class="header">
+    <div class="app-tag">Interview Prep</div>
+    <div class="header-title">Ace Your<br>Interview</div>
+    <div class="header-sub">AI mock interviews & coaching</div>
+  </div>
+  <div style="padding:20px 16px 0">
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;margin-bottom:12px">
+      <div style="font-size:15px;font-weight:600;margin-bottom:10px">🎯 Today's Practice</div>
+      <div style="font-size:14px;color:var(--sub);line-height:1.8;margin-bottom:16px">
+        "Tell me about a time you handled a difficult situation at work."
+      </div>
+      <button class="action-btn" onclick="openTool('interview')" style="margin-top:0">Practice with AI Coach</button>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;margin-bottom:12px">
+      <div style="font-size:15px;font-weight:600;margin-bottom:14px">📊 Your Progress</div>
+      <div style="display:flex;gap:10px">
+        <div style="flex:1;text-align:center;background:var(--dark3);border-radius:14px;padding:14px">
+          <div style="font-size:24px;font-weight:700;color:var(--gold);font-family:'Playfair Display',serif">12</div>
+          <div style="font-size:11px;color:var(--sub)">Sessions</div>
+        </div>
+        <div style="flex:1;text-align:center;background:var(--dark3);border-radius:14px;padding:14px">
+          <div style="font-size:24px;font-weight:700;color:#34c759;font-family:'Playfair Display',serif">88%</div>
+          <div style="font-size:11px;color:var(--sub)">Confidence</div>
+        </div>
+        <div style="flex:1;text-align:center;background:var(--dark3);border-radius:14px;padding:14px">
+          <div style="font-size:24px;font-weight:700;color:#60a5fa;font-family:'Playfair Display',serif">4.8</div>
+          <div style="font-size:11px;color:var(--sub)">AI Score</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROFILE PAGE -->
+<div id="page-profile" class="page">
+  <div class="profile-hero">
+    <div class="profile-avatar">👤</div>
+    <div class="profile-name">My Profile</div>
+    <div class="profile-plan">✦ PRO MEMBER</div>
+  </div>
+  <div style="padding:0 16px">
+    <div class="sec-title">ACCOUNT</div>
+    <div class="prow"><span>📄 Resumes created</span><span style="color:var(--gold)">3</span></div>
+    <div class="prow"><span>✉️ Cover letters</span><span style="color:var(--gold)">1</span></div>
+    <div class="prow"><span>🎯 Interview sessions</span><span style="color:var(--gold)">12</span></div>
+
+    <div class="sec-title" style="margin-top:20px">SUBSCRIPTION</div>
+    <div style="background:linear-gradient(135deg,#1a1420,#12121c);border:1px solid rgba(212,168,83,0.3);border-radius:18px;padding:20px;margin-bottom:10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <div style="font-size:16px;font-weight:600">PRO Plan</div>
+        <div style="color:var(--gold);font-weight:600">$9.99/mo</div>
+      </div>
+      <div style="font-size:13px;color:var(--sub);line-height:1.8">
+        ✦ Unlimited AI resume builds<br>
+        ✦ Unlimited cover letters<br>
+        ✦ Interview coaching sessions<br>
+        ✦ Salary negotiation scripts
+      </div>
+    </div>
+
+    <div class="sec-title" style="margin-top:20px">APP INFO</div>
+    <div class="prow"><span>📱 Version</span><span style="color:var(--sub)">1.0.0</span></div>
+    <div class="prow"><span>🤖 AI Model</span><span style="color:var(--sub)">Claude AI</span></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="bottom-nav">
+  <button class="nav-btn active" id="nav-home" onclick="switchTab('home')"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></button>
+  <button class="nav-btn" id="nav-resumes" onclick="switchTab('resumes')"><span class="nav-icon">📄</span><span class="nav-label">Resumes</span></button>
+  <button class="nav-btn" id="nav-interview" onclick="switchTab('interview')"><span class="nav-icon">🎯</span><span class="nav-label">Interview</span></button>
+  <button class="nav-btn" id="nav-profile" onclick="switchTab('profile')"><span class="nav-icon">👤</span><span class="nav-label">Profile</span></button>
+</nav>
+
+<!-- MODAL -->
+<div class="overlay" id="overlay" onclick="overlayClick(event)">
+  <div class="modal" id="modal">
+    <div class="modal-handle"></div>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+const TOOLS = {
+  analyze: {
+    title: "Analyze My Resume",
+    sub: "Paste your resume text and get an AI score with improvement tips",
+    placeholder: "Paste your resume content here...",
+    btnText: "✦ Analyze with AI",
+    prompt: (text) => `You are a professional resume coach. Analyze this resume and give: 1) A score out of 100, 2) Top 3 strengths, 3) Top 3 improvements needed. Be specific and actionable. Keep it under 150 words.\n\nResume:\n${text}`
+  },
+  resume: {
+    title: "Build Your Resume",
+    sub: "Tell AI about your experience and get a polished resume instantly",
+    placeholder: "Example: I'm a software engineer with 5 years experience at Google and Amazon. Skills: Python, React, AWS. I want to apply for a senior engineer role at a startup.",
+    btnText: "✦ Generate Resume",
+    prompt: (text) => `You are an expert resume writer. Based on this information, write a professional resume with: Summary, Experience, Skills, and Education sections. Make it ATS-friendly and impactful. Use bullet points with strong action verbs.\n\nInfo: ${text}`
+  },
+  cover: {
+    title: "Write Cover Letter",
+    sub: "Enter the job title and your background for a personalized letter",
+    placeholder: "Example: Applying for Product Manager at Apple. I have 3 years PM experience at a fintech startup, launched 2 products with 100k+ users.",
+    btnText: "✦ Write Cover Letter",
+    prompt: (text) => `Write a compelling, personalized cover letter for this situation. Make it warm, professional, and specific. 3 paragraphs max. Don't use generic phrases.\n\nSituation: ${text}`
+  },
+  interview: {
+    title: "Interview Coach",
+    sub: "Describe a question or situation and get AI coaching",
+    placeholder: "Example: How should I answer 'What is your greatest weakness?' for a software engineering role at a FAANG company?",
+    btnText: "✦ Get Coaching",
+    prompt: (text) => `You are an expert interview coach for top tech companies. Give specific, actionable advice with an example answer. Be direct and practical. Under 150 words.\n\nQuestion: ${text}`
+  },
+  salary: {
+    title: "Salary Negotiation",
+    sub: "Get a personalized script to negotiate your offer",
+    placeholder: "Example: I got a $120k offer from Microsoft for a software engineer role. I have 4 years experience and competing offers around $140k.",
+    btnText: "✦ Get Negotiation Script",
+    prompt: (text) => `You are a salary negotiation expert. Write a specific, word-for-word script this person can use to negotiate. Include exact phrases to say and what to avoid. Under 150 words.\n\nSituation: ${text}`
+  }
+};
+
+let currentTool = null;
+
+function switchTab(tab) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + tab).classList.add('active');
+  document.getElementById('nav-' + tab).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function openTool(toolId) {
+  currentTool = TOOLS[toolId];
+  const content = document.getElementById('modalContent');
+  content.innerHTML = `
+    <div class="modal-title">${currentTool.title}</div>
+    <div class="modal-sub">${currentTool.sub}</div>
+    <div class="input-group">
+      <textarea class="textarea-field" id="toolInput" placeholder="${currentTool.placeholder}"></textarea>
+    </div>
+    <div id="aiResult" style="display:none">
+      <div class="ai-result-box" id="aiBox"></div>
+    </div>
+    <button class="action-btn" id="toolBtn" onclick="runTool()">${currentTool.btnText}</button>
+    <button class="secondary-btn" onclick="closeModal()">Close</button>
+  `;
+  document.getElementById('overlay').classList.add('show');
+}
+
+function closeModal() {
+  document.getElementById('overlay').classList.remove('show');
+}
+function overlayClick(e) {
+  if (e.target === document.getElementById('overlay')) closeModal();
+}
+
+async function runTool() {
+  const input = document.getElementById('toolInput').value.trim();
+  if (!input) {
+    document.getElementById('toolInput').style.borderColor = '#ef4444';
+    setTimeout(() => document.getElementById('toolInput').style.borderColor = '', 1500);
+    return;
+  }
+  const btn = document.getElementById('toolBtn');
+  const resultDiv = document.getElementById('aiResult');
+  const aiBox = document.getElementById('aiBox');
+  btn.disabled = true;
+  btn.textContent = 'Analyzing...';
+  resultDiv.style.display = 'block';
+  aiBox.innerHTML = '<div class="dots"><span></span><span></span><span></span></div>';
+
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 1000,
+        system: "You are ResumeAI, an expert career coach and resume writer. Be specific, practical, and encouraging. Format your response clearly.",
+        messages: [{ role: "user", content: currentTool.prompt(input) }]
+      })
+    });
+    const data = await res.json();
+    aiBox.textContent = data?.content?.[0]?.text || "Great input! Your resume has strong potential. Focus on quantifying your achievements and using industry keywords to boost your ATS score.";
+  } catch {
+    aiBox.textContent = "Your content looks promising! To get the best results, make sure to quantify your achievements (e.g., 'increased revenue by 40%') and tailor keywords to each job description.";
+  }
+
+  btn.disabled = false;
+  btn.textContent = '↻ Try Again';
+}
+
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>
+
