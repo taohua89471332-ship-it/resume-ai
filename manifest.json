@@ -1,0 +1,25 @@
+{
+  "name": "ResumeAI - Land Your Dream Job",
+  "short_name": "ResumeAI",
+  "description": "AI-powered resume builder, cover letter writer and interview coach.",
+  "start_url": "/resume-ai/",
+  "scope": "/resume-ai/",
+  "display": "standalone",
+  "background_color": "#0f0f14",
+  "theme_color": "#d4a853",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-4.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-4.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
